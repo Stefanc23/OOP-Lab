@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         int numberOfStudents = 8, numberOfQuestions = 10;
-	    char[][] scoreTable = {
+	    char[][] answerTable = {
                 {'A', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
                 {'D', 'B', 'A', 'B', 'C', 'A', 'E', 'E', 'A', 'D'},
                 {'E', 'D', 'D', 'A', 'C', 'B', 'E', 'E', 'A', 'D'},
@@ -20,7 +20,7 @@ public class Main {
         for(int i=0; i<numberOfStudents; ++i) {
             int numberOfCorrectAnswers = 0;
             for(int j=0; j<numberOfQuestions; ++j) {
-                if(scoreTable[i][j] == answerSheet[j]) numberOfCorrectAnswers++;
+                if(answerTable[i][j] == answerSheet[j]) numberOfCorrectAnswers++;
             }
             result[i] = numberOfCorrectAnswers;
         }

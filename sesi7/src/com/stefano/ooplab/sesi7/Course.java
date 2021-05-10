@@ -21,6 +21,7 @@ public class Course {
     }
 
     public void dropStudent(String student) {
+        // find student based on student name
         for(int i=0; i<numberOfStudents; ++i) {
             if(students.get(i).equals(student)) {
                 students.remove(i);
